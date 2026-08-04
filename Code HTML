@@ -1,0 +1,28 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+
+    <h1>THE ARCHIVE</h1>
+
+    <p>Department of Anomalous Research</p>
+
+    <button onclick="location.href='713.html'">
+        ACCESS DATABASE
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
