@@ -1,26 +1,53 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Archive</title>
+    <title>The Archive | SCP Database</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="login-box">
+    <header>
+        <h1>THE ARCHIVE</h1>
+        <p>SCP FOUNDATION DATABASE</p>
+    </header>
 
-    <h1>THE ARCHIVE</h1>
 
-    <p>Department of Anomalous Research</p>
+    <main>
 
-    <button onclick="location.href='713.html'">
-        ACCESS DATABASE
-    </button>
+        <section class="card">
+            <h2>Welcome, Researcher</h2>
 
-</div>
+            <p>
+                Accessing classified anomaly records.
+                Clearance level required.
+            </p>
+        </section>
+
+
+        <section class="card">
+
+            <h2>SCP Database</h2>
+
+            <a href="713.html">
+                SCP-713
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Secure. Contain. Protect.
+        </p>
+    </footer>
+
 
 <script src="script.js"></script>
 
