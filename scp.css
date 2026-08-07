@@ -1,108 +1,106 @@
-//* =====================================
-   SCP FOUNDATION DOCUMENT DATABASE
-   SCP.CSS
-===================================== */
+/* ==========================================
+   SCP FOUNDATION - CLASSIFIED DOCUMENT STYLE
+   Black / Red Terminal Theme
+========================================== */
 
 
-/* MAIN SCP DOCUMENT */
+/* Main SCP File */
 
 .scp-document {
 
     width: 90%;
-    max-width: 1050px;
+    max-width: 1100px;
 
-    margin: 60px auto;
+    margin: 50px auto;
 
-    background:#0c0c0c;
+    background:
+    linear-gradient(
+        145deg,
+        #111,
+        #050505
+    );
 
-    border:1px solid #555;
+    border: 2px solid #8b0000;
 
-    padding:50px;
+    padding: 45px;
 
     box-shadow:
-    0 0 25px rgba(0,0,0,0.8);
+    0 0 25px rgba(139,0,0,0.25);
 
 }
 
 
-
-/* DOCUMENT TOP HEADER */
-
+/* Top Document Header */
 
 .document-header {
 
-    border-bottom:3px solid #990000;
+    border-bottom: 2px solid #8b0000;
 
-    padding-bottom:25px;
+    padding-bottom: 25px;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 
 }
-
 
 
 .document-header h1 {
 
-    margin:0;
+    color:#ff2222;
 
-    font-size:42px;
+    font-size:45px;
 
-    color:#d00000;
+    letter-spacing:4px;
 
-    letter-spacing:3px;
+    margin-bottom:10px;
 
 }
-
 
 
 .document-header p {
 
     color:#aaa;
 
-    font-size:18px;
+    font-size:20px;
 
 }
 
 
 
-
-/* FOUNDATION WARNING */
-
+/* Classified Warning */
 
 .classified-warning {
 
-    background:#170000;
+    background:#1a0000;
 
-    border:1px solid #990000;
-
-    padding:15px;
-
-    margin:25px 0;
-
-    text-align:center;
+    border:1px solid #ff2222;
 
     color:#ff4444;
 
+    padding:18px;
+
+    text-align:center;
+
     font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin:30px 0;
 
 }
 
 
 
-
-
-/* INFORMATION TABLE */
-
+/* Information Panel */
 
 .document-info {
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3, 1fr);
 
-    gap:20px;
+    gap:15px;
 
-    margin:35px 0;
+    margin-bottom:40px;
 
 }
 
@@ -110,7 +108,7 @@
 
 .info-box {
 
-    background:#111;
+    background:#090909;
 
     border:1px solid #444;
 
@@ -119,14 +117,13 @@
 }
 
 
-
 .info-box h3 {
 
     color:#888;
 
     font-size:14px;
 
-    margin-top:0;
+    letter-spacing:2px;
 
 }
 
@@ -134,21 +131,22 @@
 
 .info-box p {
 
-    color:white;
+    color:#ff3333;
 
-    font-size:20px;
+    font-size:22px;
 
 }
 
 
 
-
-/* SCP SECTIONS */
+/* SCP Sections */
 
 
 .scp-section {
 
-    margin-top:55px;
+    margin-top:45px;
+
+    padding-bottom:20px;
 
 }
 
@@ -160,11 +158,11 @@
 
     font-size:28px;
 
-    border-bottom:
+    border-left:5px solid #8b0000;
 
-    1px solid #555;
+    padding-left:15px;
 
-    padding-bottom:10px;
+    margin-bottom:20px;
 
 }
 
@@ -182,16 +180,13 @@
 
 
 
-
-
-/* BULLET LISTS */
-
+/* Lists */
 
 .scp-section li {
 
-    margin:12px 0;
+    color:#ccc;
 
-    color:#ddd;
+    margin:12px 0;
 
     font-size:17px;
 
@@ -199,20 +194,18 @@
 
 
 
-
-
-/* INTERVIEW / LOG FILES */
+/* Interview Logs */
 
 
 .log {
 
     background:#050505;
 
-    border-left:
+    border:1px solid #444;
 
-    5px solid #990000;
+    border-left:5px solid #b30000;
 
-    padding:30px;
+    padding:25px;
 
     margin:25px 0;
 
@@ -220,43 +213,75 @@
 
 
 
-.log p {
-
-    font-size:17px;
-
-}
-
-
-
-
-.log-name {
+.log strong {
 
     color:#ff3333;
 
-    font-weight:bold;
-
 }
 
 
 
-
-
-/* REDACTED INFORMATION */
+/* Redacted Text */
 
 
 .redacted {
 
-    background:black;
+    background:#000;
 
-    color:black;
+    color:#000;
 
-    padding:3px 12px;
+    padding:2px 10px;
 
-    cursor:pointer;
+    border:1px solid #333;
 
 }
 
 
+.redacted:hover {
+
+    color:white;
+
+}
+
+
+
+/* Footer */
+
+
+.document-footer {
+
+    margin-top:50px;
+
+    border-top:1px solid #333;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#666;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:800px){
+
+    .scp-document{
+
+        padding:25px;
+
+    }
+
+
+    .document-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 
 .redacted:hover {
 
