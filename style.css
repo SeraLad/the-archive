@@ -1,198 +1,57 @@
 body {
-    margin: 0;
     background: #0b0b0b;
-    color: #e6e6e6;
-    font-family: "Courier New", monospace;
+    color: #d8d8d8;
+    font-family: Arial, sans-serif;
 }
-
-
-/* HEADER */
 
 header {
     text-align: center;
-    padding: 40px 20px;
-    border-bottom: 2px solid #b30000;
-    background: #111;
+    border-bottom: 2px solid #555;
+    padding: 30px;
 }
-
 
 header h1 {
-    color: #cc0000;
-    font-size: 50px;
-    letter-spacing: 8px;
-    margin: 0;
+    color: #b30000;
+    font-size: 45px;
 }
 
 
-header p {
-    color: #aaa;
-    letter-spacing: 3px;
-}
-
-
-
-/* MAIN DOCUMENT AREA */
-
-main {
-    width: 85%;
-    max-width: 1000px;
+.database {
+    width: 80%;
     margin: 40px auto;
 }
 
 
-
-/* SCP FILE */
-
-.scp-file {
-
-    background: #121212;
-
-    border: 1px solid #444;
-
-    padding: 35px;
-
-    box-shadow: 0 0 20px black;
-
-}
-
-
-
-.scp-file h2 {
-
-    color: #d00000;
-
-    border-bottom: 1px solid #444;
-
-    padding-bottom: 8px;
-
-    margin-top: 35px;
-
-}
-
-
-
-.scp-file p {
-
-    line-height: 1.7;
-
-    font-size: 16px;
-
-}
-
-
-
-/* LISTS */
-
-ul {
-
-    background: #090909;
-
-    padding: 20px 40px;
-
-    border-left: 3px solid #b30000;
-
-}
-
-
-
-li {
-
-    margin: 10px 0;
-
-}
-
-
-
-/* LOG SECTIONS */
-
-
-.log {
-
-    background: #080808;
-
-    border-left: 4px solid #d00000;
-
+.scp-card {
+    background: #151515;
+    border: 1px solid #555;
     padding: 20px;
-
-    margin: 25px 0;
-
+    margin: 20px 0;
 }
 
 
-
-.note {
-
-    background: #111;
-
-    border: 1px dashed #777;
-
-    padding: 25px;
-
-    font-style: italic;
-
+.scp-card h3 {
+    color: #ff3333;
 }
-
-
-
-/* REDACTION */
-
-
-.redacted {
-
-    background: black;
-
-    color: black;
-
-    display: inline-block;
-
-    padding: 5px 20px;
-
-    user-select: none;
-
-}
-
-
-
-.redacted:hover {
-
-    color: white;
-
-}
-
-
-
-/* LINKS */
 
 
 a {
-
-    color: #ff3333;
-
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #8b0000;
+    color: white;
     text-decoration: none;
-
 }
-
 
 
 a:hover {
-
-    color: white;
-
+    background: #ff0000;
 }
 
 
-
-/* FOOTER */
-
-
 footer {
-
-    text-align: center;
-
-    padding: 30px;
-
-    color: #666;
-
-    border-top: 1px solid #333;
-
+    text-align:center;
+    margin-top:50px;
+    color:#777;
 }
