@@ -1,335 +1,198 @@
-/* ==========================================
-   SCP FOUNDATION - CLASSIFIED DOCUMENT STYLE
-   Black / Red Terminal Theme
-========================================== */
-
-
-/* Main SCP File */
-
-.scp-document {
-
-    width: 90%;
-    max-width: 1100px;
-
-    margin: 50px auto;
-
-    background:
-    linear-gradient(
-        145deg,
-        #111,
-        #050505
-    );
-
-    border: 2px solid #8b0000;
-
-    padding: 45px;
-
-    box-shadow:
-    0 0 25px rgba(139,0,0,0.25);
-
+body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #e6e6e6;
+    font-family: "Courier New", monospace;
 }
 
 
-/* Top Document Header */
+/* HEADER */
 
-.document-header {
-
-    border-bottom: 2px solid #8b0000;
-
-    padding-bottom: 25px;
-
-    margin-bottom: 35px;
-
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #b30000;
+    background: #111;
 }
 
 
-.document-header h1 {
-
-    color:#ff2222;
-
-    font-size:45px;
-
-    letter-spacing:4px;
-
-    margin-bottom:10px;
-
+header h1 {
+    color: #cc0000;
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin: 0;
 }
 
 
-.document-header p {
+header p {
+    color: #aaa;
+    letter-spacing: 3px;
+}
 
-    color:#aaa;
 
-    font-size:20px;
+
+/* MAIN DOCUMENT AREA */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+
+/* SCP FILE */
+
+.scp-file {
+
+    background: #121212;
+
+    border: 1px solid #444;
+
+    padding: 35px;
+
+    box-shadow: 0 0 20px black;
 
 }
 
 
 
-/* Classified Warning */
+.scp-file h2 {
 
-.classified-warning {
+    color: #d00000;
 
-    background:#1a0000;
+    border-bottom: 1px solid #444;
 
-    border:1px solid #ff2222;
+    padding-bottom: 8px;
 
-    color:#ff4444;
-
-    padding:18px;
-
-    text-align:center;
-
-    font-weight:bold;
-
-    letter-spacing:2px;
-
-    margin:30px 0;
+    margin-top: 35px;
 
 }
 
 
 
-/* Information Panel */
+.scp-file p {
 
-.document-info {
+    line-height: 1.7;
 
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-
-    gap:15px;
-
-    margin-bottom:40px;
+    font-size: 16px;
 
 }
 
 
 
-.info-box {
+/* LISTS */
 
-    background:#090909;
+ul {
 
-    border:1px solid #444;
+    background: #090909;
 
-    padding:20px;
+    padding: 20px 40px;
 
-}
-
-
-.info-box h3 {
-
-    color:#888;
-
-    font-size:14px;
-
-    letter-spacing:2px;
+    border-left: 3px solid #b30000;
 
 }
 
 
 
-.info-box p {
+li {
 
-    color:#ff3333;
-
-    font-size:22px;
+    margin: 10px 0;
 
 }
 
 
 
-/* SCP Sections */
-
-
-.scp-section {
-
-    margin-top:45px;
-
-    padding-bottom:20px;
-
-}
-
-
-
-.scp-section h2 {
-
-    color:#ff3333;
-
-    font-size:28px;
-
-    border-left:5px solid #8b0000;
-
-    padding-left:15px;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.scp-section p {
-
-    color:#ddd;
-
-    font-size:18px;
-
-    line-height:1.9;
-
-}
-
-
-
-/* Lists */
-
-.scp-section li {
-
-    color:#ccc;
-
-    margin:12px 0;
-
-    font-size:17px;
-
-}
-
-
-
-/* Interview Logs */
+/* LOG SECTIONS */
 
 
 .log {
 
-    background:#050505;
+    background: #080808;
 
-    border:1px solid #444;
+    border-left: 4px solid #d00000;
 
-    border-left:5px solid #b30000;
+    padding: 20px;
 
-    padding:25px;
-
-    margin:25px 0;
+    margin: 25px 0;
 
 }
 
 
 
-.log strong {
+.note {
 
-    color:#ff3333;
+    background: #111;
+
+    border: 1px dashed #777;
+
+    padding: 25px;
+
+    font-style: italic;
 
 }
 
 
 
-/* Redacted Text */
+/* REDACTION */
 
 
 .redacted {
 
-    background:#000;
+    background: black;
 
-    color:#000;
+    color: black;
 
-    padding:2px 10px;
+    display: inline-block;
 
-    border:1px solid #333;
+    padding: 5px 20px;
+
+    user-select: none;
 
 }
+
 
 
 .redacted:hover {
 
-    color:white;
+    color: white;
 
 }
 
 
 
-/* Footer */
+/* LINKS */
 
 
-.document-footer {
+a {
 
-    margin-top:50px;
+    color: #ff3333;
 
-    border-top:1px solid #333;
-
-    padding-top:20px;
-
-    text-align:center;
-
-    color:#666;
+    text-decoration: none;
 
 }
 
 
 
-/* Mobile */
+a:hover {
 
-@media(max-width:800px){
-
-    .scp-document{
-
-        padding:25px;
-
-    }
-
-
-    .document-info{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-.redacted:hover {
-
-    color:white;
+    color: white;
 
 }
 
 
 
-
-/* DOCUMENT FOOTER */
-
-
-.document-footer {
-
-    margin-top:60px;
-
-    border-top:1px solid #444;
-
-    padding-top:20px;
-
-    color:#777;
-
-    text-align:center;
-
-}
+/* FOOTER */
 
 
+footer {
 
+    text-align: center;
 
-/* MOBILE SUPPORT */
+    padding: 30px;
 
+    color: #666;
 
-@media(max-width:800px){
-
-
-.document-info {
-
-    grid-template-columns:1fr;
-
-}
-
-
-.scp-document {
-
-    padding:25px;
-
-}
-
+    border-top: 1px solid #333;
 
 }
